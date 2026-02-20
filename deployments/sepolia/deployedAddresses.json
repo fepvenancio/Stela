@@ -1,0 +1,46 @@
+{
+  "network": "sepolia",
+  "deployer": "0x005441affcd25fe95554b13690346ebec62a27282327dd297cab01a897b08310",
+  "contracts": {
+    "StelaProtocol": {
+      "address": "0x031f738a405157f85e1f20156f3301d15cdaae363d302f4e1f44c49dbc83d437",
+      "classHash": "0x5b4687810d7c8c393df021b73205ecd3373d7f8cf01c7e880f0f82589c3edfb",
+      "txHash": "0x004eb3f5552f8e7e1140679cfca2ef709b0a9bb1d34c03a368c3512279794bda"
+    },
+    "LockerAccount": {
+      "classHash": "0x1a42b6c860becbb16fa5cd936576b98bca8e2ce26c3e279705cdf328ad4e8a5",
+      "note": "Declared only — deployed on-demand by MockRegistry when inscriptions are signed"
+    },
+    "MockERC721_StelaNFT": {
+      "address": "0x04f2345306bf8ef1c8c1445661354ef08421aa092459445a5d6b46641237e943",
+      "classHash": "0x256d8901dc2aa01afdc257d38275aeace403f12c054e244099b067ddc0135e2",
+      "name": "Stela Inscriptions",
+      "symbol": "STELA"
+    },
+    "MockRegistry": {
+      "address": "0x0499c5c4929b22fbf1ebd8c500f570b2ec5bd8a43a84ee63e92bf8ac7f9f422b",
+      "classHash": "0x314a22a9219c6ba63edf0e54ef64a87c5f6163d119569abedafeaa1a365e6bb"
+    },
+    "MockERC20_DebtToken": {
+      "address": "0x034a0cf09c79e7f20fb2136212f27b7dd88e91f9a24b2ac50c5c41ff6b30c59d",
+      "classHash": "0x55b0f527a458197e1fc6d100cdb52bbe9079cee5a41da2460596872d3fc4b28",
+      "name": "Mock USDC",
+      "symbol": "mUSDC",
+      "decimals": 6
+    },
+    "MockERC20_CollateralToken": {
+      "address": "0x07e86764396d61d2179cd1a48033fa4f30897cb172464961a80649aff4da9bdd",
+      "classHash": "0x55b0f527a458197e1fc6d100cdb52bbe9079cee5a41da2460596872d3fc4b28",
+      "name": "Mock WETH",
+      "symbol": "mWETH",
+      "decimals": 18
+    },
+    "MockERC20_InterestToken": {
+      "address": "0x0479f31a23241b1337375b083099bd1672716edbf908b1b30148a648657a1cee",
+      "classHash": "0x55b0f527a458197e1fc6d100cdb52bbe9079cee5a41da2460596872d3fc4b28",
+      "name": "Mock DAI",
+      "symbol": "mDAI",
+      "decimals": 18
+    }
+  }
+}

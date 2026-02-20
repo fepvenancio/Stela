@@ -1,0 +1,35 @@
+[package]
+name = "stela"
+version = "0.1.0"
+edition = "2024_07"
+description = "Stela — P2P Inscriptions Protocol on StarkNet"
+
+[dependencies]
+starknet = "2.13.1"
+openzeppelin_token = "3.0.0"
+openzeppelin_access = "3.0.0"
+openzeppelin_introspection = "3.0.0"
+openzeppelin_account = "3.0.0"
+openzeppelin_security = "3.0.0"
+openzeppelin_interfaces = "2.1.0"
+
+[dev-dependencies]
+openzeppelin_testing = "6.4.0"
+snforge_std = "0.56.0"
+
+[[target.starknet-contract]]
+allowed-libfuncs-list.name = "experimental"
+sierra = true
+casm = true
+
+[tool.fmt]
+sort-module-level-items = true
+max-line-length = 120
+
+[tool.snforge]
+exit_first = true
+
+[profile.dev.cairo]
+unstable-add-statements-functions-debug-info = true
+unstable-add-statements-code-locations-debug-info = true
+panic-backtrace = true
